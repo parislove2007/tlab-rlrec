@@ -1,0 +1,24 @@
+{
+ "n_events": 5476251,
+ "n_items": 15706,
+ "vocab_size": 15708,
+ "n_users_any": 962179,
+ "n_users_usable": 240275,
+ "users_with_val_target": 58813,
+ "users_with_test_target": 77009,
+ "share_user_days_with_several_events": 0.3025,
+ "mean_events_on_those_days": 2.842,
+ "train_end": "2021-08-02",
+ "val_end": "2021-08-09",
+ "test_end": "2021-08-23",
+ "history_len": {
+  "median": 9.0,
+  "p90": 26.0,
+  "max": 1262
+ },
+ "reward": {
+  "mean": 0.46366990301689254,
+  "median": 0.3199999928474426,
+  "share_above_0.9": 0.32362888406685525
+ }
+}

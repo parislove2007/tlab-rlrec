@@ -1,0 +1,595 @@
+{
+ "n_users": 4000,
+ "steps": 5,
+ "greedy": false,
+ "policies": {
+  "базовая": [
+   {
+    "step": 1,
+    "predicted_reward": 0.4928238093852997,
+    "verifiable_share": 0.02425,
+    "distinct_items": 1541,
+    "entropy": 6.722200952193388,
+    "share_of_top100": 0.3665
+   },
+   {
+    "step": 2,
+    "predicted_reward": 0.4990578591823578,
+    "verifiable_share": 0.01525,
+    "distinct_items": 1584,
+    "entropy": 6.792016851989078,
+    "share_of_top100": 0.347
+   },
+   {
+    "step": 3,
+    "predicted_reward": 0.4913877844810486,
+    "verifiable_share": 0.018,
+    "distinct_items": 1577,
+    "entropy": 6.790673523613195,
+    "share_of_top100": 0.34925
+   },
+   {
+    "step": 4,
+    "predicted_reward": 0.49508970975875854,
+    "verifiable_share": 0.0125,
+    "distinct_items": 1624,
+    "entropy": 6.858308557262829,
+    "share_of_top100": 0.33225
+   },
+   {
+    "step": 5,
+    "predicted_reward": 0.4954010546207428,
+    "verifiable_share": 0.0135,
+    "distinct_items": 1587,
+    "entropy": 6.855105532140242,
+    "share_of_top100": 0.33125
+   }
+  ],
+  "RL early60": [
+   {
+    "step": 1,
+    "predicted_reward": 0.5223568081855774,
+    "verifiable_share": 0.019,
+    "distinct_items": 1529,
+    "entropy": 6.6900503037976495,
+    "share_of_top100": 0.3675
+   },
+   {
+    "step": 2,
+    "predicted_reward": 0.5234988331794739,
+    "verifiable_share": 0.01825,
+    "distinct_items": 1532,
+    "entropy": 6.71992557361318,
+    "share_of_top100": 0.36425
+   },
+   {
+    "step": 3,
+    "predicted_reward": 0.5216416716575623,
+    "verifiable_share": 0.01775,
+    "distinct_items": 1522,
+    "entropy": 6.7656447318796324,
+    "share_of_top100": 0.34625
+   },
+   {
+    "step": 4,
+    "predicted_reward": 0.5310693383216858,
+    "verifiable_share": 0.01575,
+    "distinct_items": 1529,
+    "entropy": 6.7768564699288865,
+    "share_of_top100": 0.34675
+   },
+   {
+    "step": 5,
+    "predicted_reward": 0.5252472162246704,
+    "verifiable_share": 0.01325,
+    "distinct_items": 1553,
+    "entropy": 6.811345601998493,
+    "share_of_top100": 0.339
+   }
+  ],
+  "RL kl0.01": [
+   {
+    "step": 1,
+    "predicted_reward": 0.6186602115631104,
+    "verifiable_share": 0.03375,
+    "distinct_items": 838,
+    "entropy": 5.067502702032312,
+    "share_of_top100": 0.6795
+   },
+   {
+    "step": 2,
+    "predicted_reward": 0.6268748044967651,
+    "verifiable_share": 0.0285,
+    "distinct_items": 811,
+    "entropy": 5.15149970333959,
+    "share_of_top100": 0.67925
+   },
+   {
+    "step": 3,
+    "predicted_reward": 0.6280520558357239,
+    "verifiable_share": 0.026,
+    "distinct_items": 764,
+    "entropy": 5.225214013423482,
+    "share_of_top100": 0.69075
+   },
+   {
+    "step": 4,
+    "predicted_reward": 0.6197225451469421,
+    "verifiable_share": 0.01875,
+    "distinct_items": 848,
+    "entropy": 5.544156683322477,
+    "share_of_top100": 0.64275
+   },
+   {
+    "step": 5,
+    "predicted_reward": 0.6170715093612671,
+    "verifiable_share": 0.01825,
+    "distinct_items": 830,
+    "entropy": 5.603236147072265,
+    "share_of_top100": 0.6395
+   }
+  ],
+  "RL kl0.05": [
+   {
+    "step": 1,
+    "predicted_reward": 0.6169281005859375,
+    "verifiable_share": 0.02925,
+    "distinct_items": 875,
+    "entropy": 5.063830272666879,
+    "share_of_top100": 0.67025
+   },
+   {
+    "step": 2,
+    "predicted_reward": 0.6248483657836914,
+    "verifiable_share": 0.025,
+    "distinct_items": 831,
+    "entropy": 5.194599697445434,
+    "share_of_top100": 0.67325
+   },
+   {
+    "step": 3,
+    "predicted_reward": 0.6229162812232971,
+    "verifiable_share": 0.022,
+    "distinct_items": 819,
+    "entropy": 5.312365781562148,
+    "share_of_top100": 0.66525
+   },
+   {
+    "step": 4,
+    "predicted_reward": 0.6134090423583984,
+    "verifiable_share": 0.02475,
+    "distinct_items": 863,
+    "entropy": 5.5515814098388105,
+    "share_of_top100": 0.62825
+   },
+   {
+    "step": 5,
+    "predicted_reward": 0.6134134531021118,
+    "verifiable_share": 0.0195,
+    "distinct_items": 853,
+    "entropy": 5.678250268939946,
+    "share_of_top100": 0.622
+   }
+  ],
+  "RL kl0.2": [
+   {
+    "step": 1,
+    "predicted_reward": 0.6010390520095825,
+    "verifiable_share": 0.028,
+    "distinct_items": 1006,
+    "entropy": 5.44524248412187,
+    "share_of_top100": 0.60675
+   },
+   {
+    "step": 2,
+    "predicted_reward": 0.6056122779846191,
+    "verifiable_share": 0.02725,
+    "distinct_items": 983,
+    "entropy": 5.613490757022731,
+    "share_of_top100": 0.596
+   },
+   {
+    "step": 3,
+    "predicted_reward": 0.6112955808639526,
+    "verifiable_share": 0.024,
+    "distinct_items": 951,
+    "entropy": 5.637471347317522,
+    "share_of_top100": 0.59275
+   },
+   {
+    "step": 4,
+    "predicted_reward": 0.6062096357345581,
+    "verifiable_share": 0.01725,
+    "distinct_items": 960,
+    "entropy": 5.76106073385266,
+    "share_of_top100": 0.589
+   },
+   {
+    "step": 5,
+    "predicted_reward": 0.6067653894424438,
+    "verifiable_share": 0.0205,
+    "distinct_items": 949,
+    "entropy": 5.830671951700827,
+    "share_of_top100": 0.57925
+   }
+  ],
+  "RL kl0.5": [
+   {
+    "step": 1,
+    "predicted_reward": 0.5714024305343628,
+    "verifiable_share": 0.0265,
+    "distinct_items": 1262,
+    "entropy": 6.1675750418062405,
+    "share_of_top100": 0.47775
+   },
+   {
+    "step": 2,
+    "predicted_reward": 0.5796842575073242,
+    "verifiable_share": 0.0225,
+    "distinct_items": 1268,
+    "entropy": 6.211795729369343,
+    "share_of_top100": 0.46975
+   },
+   {
+    "step": 3,
+    "predicted_reward": 0.5793793797492981,
+    "verifiable_share": 0.0185,
+    "distinct_items": 1207,
+    "entropy": 6.237425329377529,
+    "share_of_top100": 0.46875
+   },
+   {
+    "step": 4,
+    "predicted_reward": 0.5840805172920227,
+    "verifiable_share": 0.0155,
+    "distinct_items": 1206,
+    "entropy": 6.269624395918276,
+    "share_of_top100": 0.46675
+   },
+   {
+    "step": 5,
+    "predicted_reward": 0.5799304246902466,
+    "verifiable_share": 0.01325,
+    "distinct_items": 1226,
+    "entropy": 6.330647887053484,
+    "share_of_top100": 0.4545
+   }
+  ],
+  "RL kl0": [
+   {
+    "step": 1,
+    "predicted_reward": 0.6230698823928833,
+    "verifiable_share": 0.034,
+    "distinct_items": 803,
+    "entropy": 4.951291467488938,
+    "share_of_top100": 0.699
+   },
+   {
+    "step": 2,
+    "predicted_reward": 0.6290569305419922,
+    "verifiable_share": 0.02975,
+    "distinct_items": 817,
+    "entropy": 5.166648459210607,
+    "share_of_top100": 0.68225
+   },
+   {
+    "step": 3,
+    "predicted_reward": 0.6260517239570618,
+    "verifiable_share": 0.02175,
+    "distinct_items": 801,
+    "entropy": 5.320946403780635,
+    "share_of_top100": 0.67875
+   },
+   {
+    "step": 4,
+    "predicted_reward": 0.6177982091903687,
+    "verifiable_share": 0.02175,
+    "distinct_items": 830,
+    "entropy": 5.495098819478514,
+    "share_of_top100": 0.65125
+   },
+   {
+    "step": 5,
+    "predicted_reward": 0.617950975894928,
+    "verifiable_share": 0.0145,
+    "distinct_items": 824,
+    "entropy": 5.6222626800938595,
+    "share_of_top100": 0.63975
+   }
+  ],
+  "RL kl1": [
+   {
+    "step": 1,
+    "predicted_reward": 0.5460834503173828,
+    "verifiable_share": 0.0175,
+    "distinct_items": 1436,
+    "entropy": 6.496262302530405,
+    "share_of_top100": 0.41
+   },
+   {
+    "step": 2,
+    "predicted_reward": 0.5546878576278687,
+    "verifiable_share": 0.02025,
+    "distinct_items": 1451,
+    "entropy": 6.539277750030543,
+    "share_of_top100": 0.4015
+   },
+   {
+    "step": 3,
+    "predicted_reward": 0.552839994430542,
+    "verifiable_share": 0.01625,
+    "distinct_items": 1455,
+    "entropy": 6.595190526585566,
+    "share_of_top100": 0.38925
+   },
+   {
+    "step": 4,
+    "predicted_reward": 0.5542112588882446,
+    "verifiable_share": 0.016,
+    "distinct_items": 1463,
+    "entropy": 6.650105752957931,
+    "share_of_top100": 0.381
+   },
+   {
+    "step": 5,
+    "predicted_reward": 0.554581880569458,
+    "verifiable_share": 0.015,
+    "distinct_items": 1439,
+    "entropy": 6.67093642855907,
+    "share_of_top100": 0.367
+   }
+  ],
+  "RL kl2": [
+   {
+    "step": 1,
+    "predicted_reward": 0.5275061726570129,
+    "verifiable_share": 0.02425,
+    "distinct_items": 1488,
+    "entropy": 6.593487039831768,
+    "share_of_top100": 0.388
+   },
+   {
+    "step": 2,
+    "predicted_reward": 0.5343825817108154,
+    "verifiable_share": 0.019,
+    "distinct_items": 1509,
+    "entropy": 6.67777207134473,
+    "share_of_top100": 0.36875
+   },
+   {
+    "step": 3,
+    "predicted_reward": 0.5270388722419739,
+    "verifiable_share": 0.01625,
+    "distinct_items": 1544,
+    "entropy": 6.738274533151175,
+    "share_of_top100": 0.359
+   },
+   {
+    "step": 4,
+    "predicted_reward": 0.5333454012870789,
+    "verifiable_share": 0.01425,
+    "distinct_items": 1531,
+    "entropy": 6.738604295902567,
+    "share_of_top100": 0.36
+   },
+   {
+    "step": 5,
+    "predicted_reward": 0.5317728519439697,
+    "verifiable_share": 0.0145,
+    "distinct_items": 1530,
+    "entropy": 6.748996215436367,
+    "share_of_top100": 0.3495
+   }
+  ],
+  "RL kl2_seed1": [
+   {
+    "step": 1,
+    "predicted_reward": 0.525185763835907,
+    "verifiable_share": 0.018,
+    "distinct_items": 1483,
+    "entropy": 6.6205711130008735,
+    "share_of_top100": 0.38775
+   },
+   {
+    "step": 2,
+    "predicted_reward": 0.5286423563957214,
+    "verifiable_share": 0.023,
+    "distinct_items": 1530,
+    "entropy": 6.696630998691949,
+    "share_of_top100": 0.36875
+   },
+   {
+    "step": 3,
+    "predicted_reward": 0.5298774838447571,
+    "verifiable_share": 0.01675,
+    "distinct_items": 1519,
+    "entropy": 6.7542991641868095,
+    "share_of_top100": 0.34875
+   },
+   {
+    "step": 4,
+    "predicted_reward": 0.529895007610321,
+    "verifiable_share": 0.01525,
+    "distinct_items": 1507,
+    "entropy": 6.76342998992241,
+    "share_of_top100": 0.346
+   },
+   {
+    "step": 5,
+    "predicted_reward": 0.5318711400032043,
+    "verifiable_share": 0.01525,
+    "distinct_items": 1540,
+    "entropy": 6.787467877845989,
+    "share_of_top100": 0.33775
+   }
+  ],
+  "RL kl2_seed2": [
+   {
+    "step": 1,
+    "predicted_reward": 0.528016209602356,
+    "verifiable_share": 0.02525,
+    "distinct_items": 1505,
+    "entropy": 6.613862189747333,
+    "share_of_top100": 0.38575
+   },
+   {
+    "step": 2,
+    "predicted_reward": 0.5301364660263062,
+    "verifiable_share": 0.018,
+    "distinct_items": 1472,
+    "entropy": 6.642840231216226,
+    "share_of_top100": 0.38025
+   },
+   {
+    "step": 3,
+    "predicted_reward": 0.5285448431968689,
+    "verifiable_share": 0.01475,
+    "distinct_items": 1525,
+    "entropy": 6.719332993128565,
+    "share_of_top100": 0.3655
+   },
+   {
+    "step": 4,
+    "predicted_reward": 0.5258188247680664,
+    "verifiable_share": 0.016,
+    "distinct_items": 1538,
+    "entropy": 6.742123634960627,
+    "share_of_top100": 0.361
+   },
+   {
+    "step": 5,
+    "predicted_reward": 0.5317104458808899,
+    "verifiable_share": 0.0155,
+    "distinct_items": 1579,
+    "entropy": 6.790043735662104,
+    "share_of_top100": 0.34475
+   }
+  ],
+  "RL kl2_seed3": [
+   {
+    "step": 1,
+    "predicted_reward": 0.5267052054405212,
+    "verifiable_share": 0.02025,
+    "distinct_items": 1482,
+    "entropy": 6.603547343863478,
+    "share_of_top100": 0.38775
+   },
+   {
+    "step": 2,
+    "predicted_reward": 0.5246205925941467,
+    "verifiable_share": 0.018,
+    "distinct_items": 1526,
+    "entropy": 6.701800851610545,
+    "share_of_top100": 0.362
+   },
+   {
+    "step": 3,
+    "predicted_reward": 0.5269754528999329,
+    "verifiable_share": 0.01775,
+    "distinct_items": 1532,
+    "entropy": 6.71437739641595,
+    "share_of_top100": 0.36275
+   },
+   {
+    "step": 4,
+    "predicted_reward": 0.5306782722473145,
+    "verifiable_share": 0.01575,
+    "distinct_items": 1516,
+    "entropy": 6.758952192549163,
+    "share_of_top100": 0.34725
+   },
+   {
+    "step": 5,
+    "predicted_reward": 0.5278111696243286,
+    "verifiable_share": 0.01275,
+    "distinct_items": 1527,
+    "entropy": 6.7841272537044865,
+    "share_of_top100": 0.34125
+   }
+  ],
+  "RL kl5": [
+   {
+    "step": 1,
+    "predicted_reward": 0.5172812342643738,
+    "verifiable_share": 0.01975,
+    "distinct_items": 1530,
+    "entropy": 6.702978095905722,
+    "share_of_top100": 0.36425
+   },
+   {
+    "step": 2,
+    "predicted_reward": 0.5156394839286804,
+    "verifiable_share": 0.01625,
+    "distinct_items": 1573,
+    "entropy": 6.730633422779068,
+    "share_of_top100": 0.362
+   },
+   {
+    "step": 3,
+    "predicted_reward": 0.5142289996147156,
+    "verifiable_share": 0.01575,
+    "distinct_items": 1552,
+    "entropy": 6.755073007251693,
+    "share_of_top100": 0.353
+   },
+   {
+    "step": 4,
+    "predicted_reward": 0.5096421837806702,
+    "verifiable_share": 0.01425,
+    "distinct_items": 1554,
+    "entropy": 6.806838278340208,
+    "share_of_top100": 0.339
+   },
+   {
+    "step": 5,
+    "predicted_reward": 0.5139814615249634,
+    "verifiable_share": 0.014,
+    "distinct_items": 1578,
+    "entropy": 6.84387952825658,
+    "share_of_top100": 0.32925
+   }
+  ],
+  "RL return_kl0.05": [
+   {
+    "step": 1,
+    "predicted_reward": 0.5740923881530762,
+    "verifiable_share": 0.00625,
+    "distinct_items": 1470,
+    "entropy": 6.466225796230436,
+    "share_of_top100": 0.44275
+   },
+   {
+    "step": 2,
+    "predicted_reward": 0.5929346680641174,
+    "verifiable_share": 0.00525,
+    "distinct_items": 1340,
+    "entropy": 6.094425824885607,
+    "share_of_top100": 0.52425
+   },
+   {
+    "step": 3,
+    "predicted_reward": 0.6033130288124084,
+    "verifiable_share": 0.00375,
+    "distinct_items": 1277,
+    "entropy": 5.881494239326969,
+    "share_of_top100": 0.57025
+   },
+   {
+    "step": 4,
+    "predicted_reward": 0.6116990447044373,
+    "verifiable_share": 0.0045,
+    "distinct_items": 1202,
+    "entropy": 5.664002947940322,
+    "share_of_top100": 0.61575
+   },
+   {
+    "step": 5,
+    "predicted_reward": 0.617019534111023,
+    "verifiable_share": 0.0045,
+    "distinct_items": 1146,
+    "entropy": 5.542129987026538,
+    "share_of_top100": 0.63925
+   }
+  ]
+ }
+}
