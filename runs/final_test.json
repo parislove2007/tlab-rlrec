@@ -46,7 +46,7 @@
    "share_series": 0.0,
    "mean_release_year": 2012.71623,
    "median_train_popularity": 292.0,
-   "seconds": 2.2,
+   "seconds": 2.3,
    "overlap_with_base": 4.5e-05
   },
   "случайный выбор": {
@@ -92,7 +92,7 @@
    "share_series": 0.320845,
    "mean_release_year": 2017.92908,
    "median_train_popularity": 11827.0,
-   "seconds": 16.6
+   "seconds": 17.4
   },
   "best-of-50 по reward": {
    "recall@10": 0.0805722433021779,
@@ -136,7 +136,7 @@
    "share_series": 0.25774,
    "mean_release_year": 2017.975195,
    "median_train_popularity": 13559.0,
-   "seconds": 17.8,
+   "seconds": 16.9,
    "overlap_with_base": 0.841375
   },
   "RL, kl0.01": {
@@ -159,7 +159,7 @@
    "share_series": 0.15915,
    "mean_release_year": 2018.719265,
    "median_train_popularity": 19122.0,
-   "seconds": 20.0,
+   "seconds": 16.9,
    "overlap_with_base": 0.43513500000000005
   },
   "RL, kl0.05": {
@@ -182,7 +182,7 @@
    "share_series": 0.162685,
    "mean_release_year": 2018.805765,
    "median_train_popularity": 20467.0,
-   "seconds": 17.8,
+   "seconds": 16.8,
    "overlap_with_base": 0.43513500000000005
   },
   "RL, kl0.2": {
@@ -205,7 +205,7 @@
    "share_series": 0.16644,
    "mean_release_year": 2018.78484,
    "median_train_popularity": 19122.0,
-   "seconds": 16.8,
+   "seconds": 16.7,
    "overlap_with_base": 0.43513500000000005
   },
   "RL, kl0.5": {
@@ -228,7 +228,7 @@
    "share_series": 0.185495,
    "mean_release_year": 2018.47186,
    "median_train_popularity": 17365.0,
-   "seconds": 16.9,
+   "seconds": 16.3,
    "overlap_with_base": 0.43513500000000005
   },
   "RL, kl0": {
@@ -251,7 +251,7 @@
    "share_series": 0.15676,
    "mean_release_year": 2018.6647,
    "median_train_popularity": 19122.0,
-   "seconds": 16.5,
+   "seconds": 16.4,
    "overlap_with_base": 0.43513500000000005
   },
   "RL, kl1": {
@@ -274,7 +274,7 @@
    "share_series": 0.21216,
    "mean_release_year": 2018.21069,
    "median_train_popularity": 15623.0,
-   "seconds": 16.5,
+   "seconds": 16.4,
    "overlap_with_base": 0.74556
   },
   "RL, kl2": {
@@ -297,7 +297,7 @@
    "share_series": 0.2424,
    "mean_release_year": 2018.095085,
    "median_train_popularity": 15150.0,
-   "seconds": 19.3,
+   "seconds": 16.3,
    "overlap_with_base": 0.8343400000000002
   },
   "RL, kl2_seed1": {
@@ -320,7 +320,7 @@
    "share_series": 0.23984,
    "mean_release_year": 2018.070555,
    "median_train_popularity": 13559.0,
-   "seconds": 17.1,
+   "seconds": 16.4,
    "overlap_with_base": 0.83488
   },
   "RL, kl2_seed2": {
@@ -343,7 +343,7 @@
    "share_series": 0.2412,
    "mean_release_year": 2018.123065,
    "median_train_popularity": 15604.0,
-   "seconds": 16.4,
+   "seconds": 16.3,
    "overlap_with_base": 0.83488
   },
   "RL, kl2_seed3": {
@@ -366,7 +366,7 @@
    "share_series": 0.243235,
    "mean_release_year": 2018.060645,
    "median_train_popularity": 13559.0,
-   "seconds": 20.0,
+   "seconds": 16.7,
    "overlap_with_base": 0.83488
   },
   "RL, kl5": {
@@ -389,7 +389,7 @@
    "share_series": 0.277005,
    "mean_release_year": 2018.022605,
    "median_train_popularity": 13559.0,
-   "seconds": 18.3,
+   "seconds": 16.4,
    "overlap_with_base": 0.90756
   },
   "RL, return_kl0.05": {
@@ -412,8 +412,54 @@
    "share_series": 0.030405,
    "mean_release_year": 2014.667165,
    "median_train_popularity": 2764.0,
-   "seconds": 16.6,
-   "overlap_with_base": 0.070425
+   "seconds": 16.2,
+   "overlap_with_base": 0.9049600000000002
+  },
+  "RL, return_kl2.0": {
+   "recall@10": 0.15060752868872046,
+   "ndcg@10": 0.11423662742098327,
+   "map@10": 0.07404087388196019,
+   "hit@10": 0.32665,
+   "users": 20000,
+   "coverage": 0.09811536992232268,
+   "distinct_items": 1541,
+   "entropy": 5.150245882501945,
+   "entropy_norm": 0.7016505162674563,
+   "gini": 0.9889459632034632,
+   "share_of_top100": 0.76274,
+   "predicted_reward": 0.5266177654266357,
+   "realised_reward": 0.5050261094876619,
+   "hits": 8426,
+   "hit_rate_per_user": 0.4213,
+   "reward_per_user": 0.21276749992715194,
+   "share_series": 0.25407,
+   "mean_release_year": 2017.423025,
+   "median_train_popularity": 9854.0,
+   "seconds": 16.3,
+   "overlap_with_base": 0.9049600000000002
+  },
+  "RL, return_kl5.0": {
+   "recall@10": 0.1570231189475594,
+   "ndcg@10": 0.12096993497082885,
+   "map@10": 0.07930655774439406,
+   "hit@10": 0.33845,
+   "users": 20000,
+   "coverage": 0.09314911498790271,
+   "distinct_items": 1463,
+   "entropy": 5.000113764233631,
+   "entropy_norm": 0.6860518787670968,
+   "gini": 0.9900717265087853,
+   "share_of_top100": 0.786365,
+   "predicted_reward": 0.5140687227249146,
+   "realised_reward": 0.495954337818378,
+   "hits": 8760,
+   "hit_rate_per_user": 0.438,
+   "reward_per_user": 0.21722799996444955,
+   "share_series": 0.28931,
+   "mean_release_year": 2017.694105,
+   "median_train_popularity": 11718.0,
+   "seconds": 15.3,
+   "overlap_with_base": 0.9049600000000002
   }
  }
 }

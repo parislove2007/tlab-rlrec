@@ -42,7 +42,11 @@ if fin:
     extras = [("best-of-50 по reward", "#d62728", "s", "best-of-50"),
               ("популярность", "#7f7f7f", "^", "популярность"),
               ("самые досматриваемые", "#8c564b", "v", "самые досматриваемые"),
-              ("RL, return_kl0.05", "#9467bd", "D", "RL на возвратах")]
+              ("RL, return_kl0.05", "#9467bd", "D", "возвраты, KL=0.05")]
+    ret = {}
+    for k, v in R.items():
+        if k.startswith("RL, return_kl"):
+            ret[float(k.replace("RL, return_kl", ""))] = v
 
     for ax, zoom in zip(axes, (False, True)):
         ax.plot(xs[1:], ys[1:], "-o", color="#1f77b4", ms=5, lw=1.4, zorder=3,
@@ -50,6 +54,11 @@ if fin:
         ax.scatter([xs[0]], [ys[0]], c="#2ca02c", s=90, marker="*", zorder=5,
                    label="базовая модель")
         ax.axhline(ys[0], color="#2ca02c", ls=":", lw=1)
+        if ret:
+            rk = sorted(ret)
+            ax.plot([ret[k]["ndcg@10"] for k in rk], [rpu(ret[k]) for k in rk],
+                    "--o", color="#9467bd", ms=4, lw=1.2, alpha=0.9,
+                    label="RL на сигнале возврата")
         if not zoom:
             for name, col, mk, lab in extras:
                 if name in R:
@@ -66,6 +75,11 @@ if fin:
                             textcoords="offset points", xytext=(0, dy), ha="center")
             ax.annotate("базовая", (xs[0], ys[0]), fontsize=8, fontweight="bold",
                         textcoords="offset points", xytext=(-6, 8), ha="right")
+            for k in sorted(ret):
+                if ret[k]["ndcg@10"] > 0.10:
+                    ax.annotate(f"возврат, KL={k:g}", (ret[k]["ndcg@10"], rpu(ret[k])),
+                                fontsize=7.5, color="#9467bd",
+                                textcoords="offset points", xytext=(0, -13), ha="center")
             lo = min(ys[1:] + [ys[0]]); hi = max(ys[1:] + [ys[0]])
             ax.set_ylim(lo - (hi - lo) * 0.18, hi + (hi - lo) * 0.30)
             ax.set_xlim(min(xs) - 0.004, max(xs) + 0.006)
