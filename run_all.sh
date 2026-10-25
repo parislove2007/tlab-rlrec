@@ -5,6 +5,7 @@ cd "$(dirname "$0")"
 export OPENBLAS_NUM_THREADS=1
 PY=${PY:-python}
 
+$PY scripts/fetch_data.py          # downloads KION on a fresh clone
 $PY scripts/prepare_sequences.py
 $PY tests/test_no_leakage.py
 

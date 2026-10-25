@@ -51,6 +51,7 @@ pip install -r requirements.txt
 Отдельные шаги:
 
 ```bash
+python scripts/fetch_data.py              # скачать KION и собрать parquet
 python scripts/prepare_sequences.py       # события -> последовательности, словарь
 python tests/test_no_leakage.py           # шесть тестов на утечки
 python scripts/train_sft.py --epochs 4    # базовая GPT-2
@@ -63,9 +64,10 @@ python scripts/analyze_rollout.py         # многошаговая генер�
 python scripts/make_figures.py && python scripts/make_report.py
 ```
 
-Данные берутся из подготовленного parquet первого задания
-(`../tlab-recsys/data`); если его нет, `scripts/prepare_sequences.py` ожидает
-`events.parquet` и `items.parquet` в каталоге `data`.
+`scripts/fetch_data.py` скачивает KION и строит `events.parquet` и
+`items.parquet`, если их ещё нет, так что репозиторий самодостаточен: на чистой
+машине достаточно `./run_all.sh`. Шаг идемпотентен и пропускается, когда файлы
+уже на месте.
 
 ## Структура репозитория
 
