@@ -949,7 +949,8 @@ pip install -r requirements.txt
 часов, из них примерно 35 минут — базовая модель, по 15 минут каждая из двух
 моделей вознаграждения, по 2–3 минуты на прогон RL.</p>
 <p>Отдельные шаги:</p>
-<pre><code class="language-bash">python scripts/prepare_sequences.py       # события -&gt; последовательности, словарь
+<pre><code class="language-bash">python scripts/fetch_data.py              # скачать KION и собрать parquet
+python scripts/prepare_sequences.py       # события -&gt; последовательности, словарь
 python tests/test_no_leakage.py           # шесть тестов на утечки
 python scripts/train_sft.py --epochs 4    # базовая GPT-2
 python scripts/train_reward.py            # вознаграждение: доля досмотра
@@ -960,9 +961,10 @@ python scripts/evaluate_all.py            # единственный скрип�
 python scripts/analyze_rollout.py         # многошаговая генерация
 python scripts/make_figures.py &amp;&amp; python scripts/make_report.py
 </code></pre>
-<p>Данные берутся из подготовленного parquet первого задания
-(<code>../tlab-recsys/data</code>); если его нет, <code>scripts/prepare_sequences.py</code> ожидает
-<code>events.parquet</code> и <code>items.parquet</code> в каталоге <code>data</code>.</p>
+<p><code>scripts/fetch_data.py</code> скачивает KION и строит <code>events.parquet</code> и
+<code>items.parquet</code>, если их ещё нет, так что репозиторий самодостаточен: на чистой
+машине достаточно <code>./run_all.sh</code>. Шаг идемпотентен и пропускается, когда файлы
+уже на месте.</p>
 <h2>Структура репозитория</h2>
 <pre><code>src/rlrec/
   config.py     даты разбиения, размер контекста, служебные токены
